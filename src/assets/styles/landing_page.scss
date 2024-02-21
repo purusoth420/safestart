@@ -1,0 +1,57 @@
+.counts {
+  padding: 10px;
+  margin-bottom: 1rem;
+  .counts-chips {
+    width: 250px;
+    background: violet;
+    // padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    color: white;
+    p {
+      margin: 0;
+      &:nth-child(1) {
+        font-size: 27px;
+        padding: 10px;
+      }
+      &:nth-child(2) {
+        font-size: 12px;
+        padding: 10px;
+      }
+      &:nth-child(3) {
+        font-size: 15px;
+        padding: 10px;
+        background: #ff3aff;
+        text-align: center;
+      }
+    }
+    .last-div {
+      span {
+        font-size: 15px;
+        padding: 10px;
+        background: #ff3aff;
+      }
+    }
+  }
+}
+.links {
+  display: flex;
+  flex-flow: wrap;
+  .link-chips {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    background: #747bff;
+    height: 55px;
+    color: white;
+    border-radius: 5px;
+    padding: 0 1rem;
+    margin: 10px;
+    border-bottom: 7px solid #595fe1;
+  }
+  .icon {
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+.parent-wrapper {
+  background: #f3efff82;
+  // .alignment {
+  //   padding: 2rem 0 0 5rem;
+  // }
+}
+
+.landing-background {
+  section {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .icon {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .content {
+    margin-top: 1rem;
+  }
+}
