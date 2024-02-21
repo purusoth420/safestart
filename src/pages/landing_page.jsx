@@ -1,29 +1,14 @@
 import { signal } from "@preact/signals-react";
 import "../assets/styles/page_layout.scss";
 import "../assets/styles/landing_page.scss";
-import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard";
-import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRounded";
+import SpaceDashboardIcon from "@mui/icons-material/SpaceDashboard"; 
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Card, CardHeader, CardMedia, CardContent, Typography, Input } from '@mui/material'
 const LandingPage = () => {
   const [products, setProducts] = useState([])
   const [filtered, setFiltered] = useState([])
-
-  let linksArray = [
-    "About",
-    "Speakers",
-    "Meeting & Events",
-    "Announcement",
-    "Sponsors",
-    "Polling Management",
-    "Organizers",
-    "Gallery",
-    "News",
-    "Feedbacks",
-    "Masters",
-  ];
-
+ 
   useEffect(() => {
     handleProduct()
   }, [])

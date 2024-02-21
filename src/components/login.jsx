@@ -26,14 +26,17 @@ const Login = () => {
     } 
 
     async function submitLogin() {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         try {
-            if (form.email == "purusoth200298@gmail.com" && form.password == '12345678') {
+            if (form.email.match(validRegex) && form.password == '12345678') {
                 let data = {
                     isLogin: true,
                     userName: form.email
                 }
                 dispatch(handleLogin({ ...data, isLogin: true }));
                 navigate('/home')
+            } else {
+                alert("Entered incorrect credentials")
             }
         } catch (error) {
             console.log('login', error);
